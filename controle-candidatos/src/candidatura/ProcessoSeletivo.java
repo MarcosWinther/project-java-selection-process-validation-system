@@ -10,11 +10,26 @@ public class ProcessoSeletivo {
 		//analisarCandidato(2500.0);
 		//analisarCandidato(2000.0);
 		
-		selecaoCandidatos();
+		//selecaoCandidatos();
+		
+		imprimirSelecionados();
+	}
+	
+	static void imprimirSelecionados() {	
+		String [] candidatos = {"Marcos", "Thais", "Luana", "Aida", "César"};
+		System.out.println("Imprimindo a lista de candidatos informando o índice do elemento");
+		
+		for(int indice = 0; indice < candidatos.length; indice++) {
+			System.out.println("O(A) candidato(a) de número " + (indice + 1) + " é " + candidatos[indice]);
+		}
+		
+		System.out.println("Forma abreviada de interação");
+		for(String candidato : candidatos) {
+			System.out.println("O(A) candidato(a) selecionado(a) foi " + candidato);
+		}
 	}
 	
 	static void selecaoCandidatos() {
-		
 		String [] candidatos = {"Marcos", "Thais", "Luana", "Sabrina", "William", "Larissa", "Isabela", "Levy", "Cesár", "Aida"};
 		
 		int candidatosSelecionados = 0;
